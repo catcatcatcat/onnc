@@ -310,7 +310,7 @@ In Code Snippet 7, the function `CreateX86FuseConvReluPass()` is called to creat
 
 ### Updating the building scripts
 
-In the previous sections, we have added several new files. You need to update the building scripts to compile ONNC. In ONNC, two common building systems, autotools and cmake, are supported concurrently. Therefore, You need to update corresponding scripts for both building systems. Since the example here is to enable the compound operator for the X86 backend, all the new C++ files are located within the directory `lib/Target/X86`. You need to update the `CMakeLists.txt` and `Makefile.am` file in that directory.
+In the previous sections, we have added several new files. You need to update the building scripts to compile ONNC. In ONNC, two common building systems, autotools and cmake, are supported concurrently. Therefore, you need to update corresponding scripts for both building systems. Since the example here is to enable the compound operator for the X86 backend, all the new C++ files are located within the directory `lib/Target/X86`. You need to update the `CMakeLists.txt` and `Makefile.am` file in that directory.
 
 ```cmake
 add_libonnc_src(
